@@ -1,12 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;900&display=swap');
 
 * :root {
-    font-family: 'Roboto Slab', serif !important;
+    font-family: 'Roboto Slab', serif;
+    --bg-primary: #201a1c;
+}
 
+.sidebar{
+    -webkit-animation: slide-right 0.5s ease-in;
+    animation: slide-right 0.5s ease-in;
+    -moz-animation: slide-right 0.5s ease-in;
+    background-color: #5cdb95;
+    width: 60svw !important;
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(50%);
+        transform: translate(50%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slide-right{
+    0% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 /* :root {
