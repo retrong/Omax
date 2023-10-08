@@ -24,7 +24,7 @@ export default function Hero() {
 
                 <div className="mt-10 flex flex-wrap justify-between">
                     <Button />
-                    <LearnBtn styles="ml-0 sm:ml-16" />
+                    <LearnBtn styles="xs:ml-16 ml-0.5" />
                 </div>
             </div>
 

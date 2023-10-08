@@ -24,7 +24,7 @@ export default function Navbar() {
             {/* full view */}
 
             <div className="sm:flex hidden justify-between items-center w-full">
-                <ul className=" list-none sm:flex hidden justify-center items-center flex-1">
+                <ul className=" list-none sm:flex hidden justify-center items-center flex-1 mr-5">
                     {navLinks.map((nav, index) => (
                         <li
                             key={nav.id}

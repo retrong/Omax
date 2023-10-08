@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
+import Stats from '@/components/Stats';
 import styles from '@/components/style';
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
@@ -15,17 +16,26 @@ export default function page() {
             <div className="bg-image">
             </div>
                 <header
-                    className={`${styles.paddingX} ${styles.flexCenter} mx-0 sm:mx-16`}
+                    className={`${styles.paddingX} ${styles.flexCenter} mx-0 md:mx-16`}
                 >
                     <div className={`${styles.boxWidth}`}>
                         <Navbar />
                     </div>
                 </header>
 
-                <div className={`${styles.flexStart} ${styles.marginX} px-0 sm:px-16`}>
+                <div className={`${styles.flexStart} ${styles.marginX} px-0 md:px-16`}>
                     <div className={`${styles.boxWidth}`}>
                         <Hero />
                     </div>
+                </div>
+
+                <div className='bg-green max-h-[150px]'>
+                    <div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
+                        <div className={`${styles.boxWidth}`}>
+                            <Stats />
+                        </div>
+                    </div>
+
                 </div>
 		</main>
 	);
