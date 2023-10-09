@@ -29,7 +29,7 @@ export default function page() {
                     </div>
                 </div>
 
-                <div className='bg-green max-h-[150px]'>
+                <div className='bg-green max-h-[20%] mb-10'>
                     <div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
                         <div className={`${styles.boxWidth}`}>
                             <Stats />

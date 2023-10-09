@@ -12,10 +12,10 @@ export default function Hero() {
     
   return (
     <main id="home" className={`flex md:flex-row flex-col py-6 sm:py-10`}>
-        <div className={`${styles.flexStart} flex-col`}>
+        <div className={`${styles.flexStart} flex-col flex-1`}>
             <div className="flex flex-col items-start hero-text">
                 <p className="text-green font-roboto font-semibold ss:text-[18px] text-[16px] ss:leading-[18px] leading-[16px]">100% Organic Protein Powder</p>
-                <h1 className="flex-1 font-roboto font-bold text-[56px] ss:text-[60px] leading-[65px] ss:leading-[75px] text-primary">
+                <h1 className="flex-1 font-roboto font-bold text-[48px] ss:text-[60px] leading-[65px] ss:leading-[75px] text-primary">
                     All-in-one <br />
                     Supplement for <br /> 
                     Your Strength
