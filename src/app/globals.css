@@ -117,3 +117,34 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+
+/* feature component  start******/
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child{
+    width: calc(33% - 10px);
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* Breakpoint */
+@media (min-width: 640px) {
+    .child {
+        width: calc(25% - 10px);
+    }
+}
+
+@media (min-width: 940px) {
+    .child{
+        width: calc(20% - 10px);
+    }
+}
+
+/* feature component  start******/
+
