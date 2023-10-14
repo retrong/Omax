@@ -59,17 +59,17 @@ export const abouts = [
     },
     {
         id: 'about-1',
-        title: 'Increased Energy',
+        title: 'Bone Building',
         content: 'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
     },
     {
         id: 'about-1',
-        title: 'Increased Energy',
-        content: 'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
+        title: 'Weight Loss',
+        content: '"write up for the lean protein powder" lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
     },
     {
         id: 'about-1',
-        title: 'Increased Energy',
+        title: 'Muscle mass',
         content: 'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
     }
 ]

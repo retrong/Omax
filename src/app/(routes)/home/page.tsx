@@ -1,5 +1,6 @@
 import About from '@/components/About';
 import Features from '@/components/Features';
+import Feedback from '@/components/Feedback';
 import Gurantee from '@/components/Gurantee';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
@@ -17,9 +18,7 @@ export default function Home() {
 	return (
 		<main className={`w-full overflow-hidden h-15`}>
 			<div className="bg-image"></div>
-			<header
-				className={`${styles.paddingX} ${styles.flexCenter} mx-0 md:mx-16`}
-			>
+			<header className={`${styles.paddingX} ${styles.flexCenter}`}>
 				<div className={`${styles.boxWidth}`}>
 					<Navbar />
 				</div>
@@ -56,6 +55,18 @@ export default function Home() {
 					<About />
 				</div>
 			</div>
+			<div className="bg-green bg-opacity-30">
+				<div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
+					<div className={`${styles.boxWidth}`}>
+						<Feedback />
+					</div>
+				</div>
+			</div>
 		</main>
 	);
 }
+
+// about us component
+// order form component
+// will send an email to process order and also place it in an admin list to show the online orders
+// footer component
