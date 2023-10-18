@@ -72,4 +72,34 @@ export const abouts = [
         title: 'Muscle mass',
         content: 'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
     }
-]
+];
+export const feedbacks = [
+	{
+		id: 'feedback-1',
+		icon: test,
+		title: 'Anonymous',
+		content:
+			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut ',
+	},
+	{
+		id: 'feedback-2',
+		icon: test,
+		title: 'Anonymous',
+		content:
+			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit ame consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut',
+	},
+	{
+		id: 'feedback-3',
+		icon: test,
+		title: 'Anonymous',
+		content:
+			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut',
+	},
+	{
+		id: 'feedback-4',
+		icon: test,
+		title: 'Anonymous',
+		content:
+			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut',
+	},
+];

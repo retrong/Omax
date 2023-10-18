@@ -4,6 +4,7 @@ import Feedback from '@/components/Feedback';
 import Gurantee from '@/components/Gurantee';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
+import OrderForm from '@/components/OrderForm';
 import Stats from '@/components/Stats';
 import styles from '@/components/style';
 
@@ -55,11 +56,16 @@ export default function Home() {
 					<About />
 				</div>
 			</div>
-			<div className="bg-green bg-opacity-30">
-				<div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
+			<div className="bg-slate-400 bg-opacity-30">
+				<div className={`${styles.paddingX} ${styles.flexStart}`}>
 					<div className={`${styles.boxWidth}`}>
 						<Feedback />
 					</div>
+				</div>
+			</div>
+			<div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
+				<div className={`${styles.boxWidth}`}>
+                    <OrderForm />
 				</div>
 			</div>
 		</main>
