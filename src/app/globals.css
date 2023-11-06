@@ -10,6 +10,8 @@
     box-sizing: border-box;
     --bg-primary: #201a1c;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -148,3 +150,7 @@ body {
 
 /* feature component  start******/
 
+
+.circle {
+    clip-path: circle();
+}

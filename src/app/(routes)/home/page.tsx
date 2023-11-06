@@ -1,11 +1,14 @@
 import About from '@/components/About';
 import Features from '@/components/Features';
 import Feedback from '@/components/Feedback';
+import Footer from '@/components/Footer';
 import Gurantee from '@/components/Gurantee';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import OrderForm from '@/components/OrderForm';
+import ProductPrice from '@/components/ProductPrice';
 import Stats from '@/components/Stats';
+import SupplementFact from '@/components/SupplementFact';
 import styles from '@/components/style';
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
@@ -62,10 +65,27 @@ export default function Home() {
 						<Feedback />
 					</div>
 				</div>
+				<div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
+					<div className={`${styles.boxWidth}`}>
+						<OrderForm />
+					</div>
+				</div>
 			</div>
 			<div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
 				<div className={`${styles.boxWidth}`}>
-                    <OrderForm />
+					<ProductPrice />
+				</div>
+			</div>
+			<div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
+				<div className={`${styles.boxWidth}`}>
+					<SupplementFact />
+				</div>
+			</div>
+			<div className="bg-secondary">
+				<div className={`${styles.paddingX} ${styles.flexStart}`}>
+					<div className={`${styles.boxWidth}`}>
+						<Footer />
+					</div>
 				</div>
 			</div>
 		</main>

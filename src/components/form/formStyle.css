@@ -1,0 +1,43 @@
+.form-group > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Order form component  start******/
+
+input,select{
+    padding: .5rem 1rem;
+    border: 1px solid #201a1c;
+    border-radius: 6px;
+    max-width: 30rem;
+}
+
+.country-state{
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+div .error{
+    color: red;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: monospace;
+    opacity: 0.8;
+}
+
+/* order form component  end******/
+
+
+/* footer component  start******/
+
+.contact-us-text{
+    @apply text-dimWhite text-[18px] xs:text-[18px] leading-[20px] xs:leading-[18px] font-roboto ;
+
+}
+
+
+/* footer component  end******/
+

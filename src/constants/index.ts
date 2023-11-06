@@ -103,3 +103,59 @@ export const feedbacks = [
 			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut',
 	},
 ];
+
+export const products = [
+	{
+		id: 'product-1',
+		icon: test,
+		title: 'item 1',
+		content:
+			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
+	},
+	{
+		id: 'product-2',
+		icon: test,
+		title: 'item 2',
+		content:
+			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
+	},
+	{
+		id: 'product-3',
+		icon: test,
+		title: 'item 3',
+		content:
+			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
+	},
+	// {
+	// 	id: 'product-4',
+	// 	icon: test,
+	// 	title: 'item 4',
+	// 	content:
+	// 		'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
+	// },
+	// {
+	// 	id: 'product-5',
+	// 	icon: test,
+	// 	title: 'item 5',
+	// 	content:
+	// 		'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
+	// },
+];
+
+export const footers = [
+    {
+        id: 'footer-1',
+        title: 'Home',
+        links: '#home',
+    },
+    {
+        id: 'footer-2',
+        title: 'About',
+        links: '#about',
+    },
+    {
+        id: 'footer-3',
+        title: 'cta',
+        links: '#cta',
+    }
+]

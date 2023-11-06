@@ -16,11 +16,10 @@ export default function Navbar() {
         <nav className="w-full flex flex-1 py-6 justify-evenly items-center">
             <div className="mr-16 ">
                 <h1 className={`font-roboto font-bold xs:text-[50px] text-[36px] text-primary leading-[56.4px] xs:leading-[44px] w-full  flex justify-start`}>
-                    OMAX
+                    Prime <span className="text-red-500">Max</span>
                 </h1>
             </div>
             
-
             {/* full view */}
 
             <div className="sm:flex hidden justify-between items-center w-full">
@@ -37,7 +36,7 @@ export default function Navbar() {
                     ))}
                 </ul>
                 
-                <Link href="#"> 
+                <Link href="#order"> 
                     <Button /> 
                 </Link>
             </div>

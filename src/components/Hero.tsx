@@ -2,6 +2,7 @@
 
 import { easeIn, motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { main } from "../../public";
 import Button from "./Button";
 import LearnBtn from "./LearnBtn";
@@ -23,14 +24,16 @@ export default function Hero() {
                 <p className=" max-w-[470px] font-normal font-roboto mt-4 text-secondary">Nutritional Supplement filled with natural ingredents, all working together to support your strength and health</p>
 
                 <div className="mt-10 flex flex-wrap justify-between">
-                    <Button />
+                    <Link href="#order">
+                        <Button />
+                    </Link>
                     <LearnBtn styles="xs:ml-16 ml-0.5" />
                 </div>
             </div>
 
         </div>
         <motion.div 
-            className={`flex flex-1 ${styles.flexCenter} my-10 md:my-10 relative`}
+            className={`flex flex-1 ${styles.flexCenter} my-6 sm:my-0 relative`}
             initial={{opacity: 0, scale: 0.5}}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: [0, 0.71, 0.2, 1.01], scale: {type: "spring", damping: 5, stiffness: 100, restDelta: 0.001}}}
