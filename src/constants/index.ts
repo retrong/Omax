@@ -108,38 +108,31 @@ export const products = [
 	{
 		id: 'product-1',
 		icon: test,
-		title: 'item 1',
+		title: 'Almond Nut',
 		content:
 			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
 	},
 	{
 		id: 'product-2',
 		icon: test,
-		title: 'item 2',
+		title: 'Chia Seed',
 		content:
 			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
 	},
 	{
 		id: 'product-3',
 		icon: test,
-		title: 'item 3',
+		title: 'Soy beans',
 		content:
 			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
 	},
-	// {
-	// 	id: 'product-4',
-	// 	icon: test,
-	// 	title: 'item 4',
-	// 	content:
-	// 		'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
-	// },
-	// {
-	// 	id: 'product-5',
-	// 	icon: test,
-	// 	title: 'item 5',
-	// 	content:
-	// 		'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
-	// },
+	{
+		id: 'product-4',
+		icon: test,
+		title: 'Cocoa',
+		content:
+			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
+	},
 ];
 
 export const footers = [
