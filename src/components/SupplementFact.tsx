@@ -1,6 +1,9 @@
+"use client"
+
 import { products } from "@/constants";
 import Image from "next/image";
 import { main } from "../../public";
+import Accordion from "./Accordion/Accordion";
 import styles from "./style";
 
 export default function SupplementFact() {
@@ -17,7 +20,7 @@ export default function SupplementFact() {
                 <span className="border-2 border-green w-[50px] block mt-4"></span>
             </div>
 
-            <div className="grid grid-cols-3 py-4">
+            {/* <div className="grid grid-cols-3 py-4">
                 <div className="flex flex-col gap-4">
                     {products.map((product) => (
                         <div 
@@ -42,7 +45,7 @@ export default function SupplementFact() {
                     <Image src={main} alt="product image" />
                 </div>
 
-                                <div>
+                <div>
                     {products.map((product) => (
                         <div key={product.id}>
                             <h3>{product.title}</h3>
@@ -50,6 +53,17 @@ export default function SupplementFact() {
                         </div>
                     ))}
                 </div>
+            </div> */}
+
+            <div className="grid grid-cols-2 mt-8">
+                <div className="grid">
+                    <Accordion />
+                </div>
+
+                <div className="grid">
+                    <Image src={main} alt="product image" className="" />
+                </div>
+
             </div>
 
         </div>
