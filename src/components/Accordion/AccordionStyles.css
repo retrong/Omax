@@ -12,15 +12,15 @@
 }
 
 .item{
-    @apply  border-[3px] border-[#C41E3A] mb-[5px];
+    @apply  border-[3px] border-[#5dbb63] mb-[5px];
 }
 
 .item:focus-visible{
-    border: 2px solid red;
+    border: 2px solid #5dbb63;
 }
 
 .title{
-    @apply text-white flex justify-between items-center bg-[#C41E3A] px-[20px] py-[15px];
+    @apply text-white flex justify-between items-center bg-[#5dbb63] px-[20px] py-[15px];
 }
 
 .title h2{
@@ -29,7 +29,6 @@
 
 
 .content{
-    /* color: white; */
     color: black;
     max-height: 0;
     overflow: hidden;
@@ -39,13 +38,15 @@
 
 .content-main{
     padding: 0 20px;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .content-show{
     height: auto;
     color: black;
     padding: 10px 20px;
-    /* color: white; */
     max-height: 9999;
     transition: all 0.5s cubic-bezier(1,0,1,0);
 }
