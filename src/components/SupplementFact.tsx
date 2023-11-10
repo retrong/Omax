@@ -56,7 +56,7 @@ export default function SupplementFact() {
             </div> */}
 
             <div className="grid grid-cols-2 mt-8">
-                <div className="grid">
+                <div className="flex justify-center items-center">
                     <Accordion />
                 </div>
 
