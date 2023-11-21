@@ -4,7 +4,7 @@ import { easeIn, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { main } from "../../public";
-import Button from "./Button";
+import { Button } from "./Button";
 import LearnBtn from "./LearnBtn";
 import styles from "./style";
 
@@ -25,7 +25,7 @@ export default function Hero() {
 
                 <div className="mt-10 flex flex-wrap justify-between">
                     <Link href="#order">
-                        <Button />
+                        <Button>Shop now</Button>
                     </Link>
                     <LearnBtn styles="xs:ml-16 ml-0.5" />
                 </div>
@@ -33,12 +33,12 @@ export default function Hero() {
 
         </div>
         <motion.div 
-            className={`flex flex-1 ${styles.flexCenter} my-6 sm:my-0 relative`}
+            className={`flex flex-1 ${styles.flexCenter} my-6 sm:my-0 relative hero-image`}
             initial={{opacity: 0, scale: 0.5}}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: [0, 0.71, 0.2, 1.01], scale: {type: "spring", damping: 5, stiffness: 100, restDelta: 0.001}}}
         >
-            <Image src={main} alt="Hero Image" className="object-contain relative z-[5]"/>
+            <Image src={main} alt="Hero Image" className="object-contain relative z-[5] img"/>
         </motion.div>
 
     </main>

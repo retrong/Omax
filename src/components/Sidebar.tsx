@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { close, open } from '../../public';
-import Button from './Button';
+import { Button } from './Button';
 
 
 
@@ -36,7 +36,7 @@ export default function Sidebar() {
 				</ul>
 
 				<Link href="#" className='flex items-center justify-center'> 
-                    <Button /> 
+                    <Button>Order now</Button>
                 </Link>
 			</div>
 		</div>

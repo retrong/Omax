@@ -55,11 +55,11 @@ export default class Feedback extends Component {
                         <h3 className="font-semibold font-roboto text-primary text-[20px] sm:text-[24px] leading-[24px] sm:leading-[20px] mt-2">Client Feedback</h3>
                     </div>
         
-                    <Slider {...settings} className="py-4 sm:py-8 w-full h-full">
+                    <Slider {...settings} className="py-4 sm:py-8 w-full h-full cursor-pointer">
                         {feedbacks.map((feedback) => (
                             <div key={feedback.id} className="">
-                                <div className="flex justify-center items-center ">
-                                    <div className=" flex flex-col justify-center items-center w-[300px] h-[400px] bg-white shadow-xl p-5 rounded-lg gap-4">
+                                <div className="flex justify-center items-center">
+                                    <div className=" flex flex-col justify-center items-center w-[300px] h-[400px] bg-white shadow-xl p-5 rounded-lg gap-4 feedback-card">
                                         <Image 
                                             src={feedback.icon} 
                                             alt="testimony image"

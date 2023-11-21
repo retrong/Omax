@@ -2,7 +2,7 @@ const styles = {
 	boxWidth: 'xl:max-w-[1280px] w-full',
 
 	heading2:
-		'font-roboto font-semibold xs:text-[52px] text-[42px] text-white xs:leading-[76.8px] leading-[66.8px] w-full',
+		'font-roboto font-semibold xs:text-[42px] text-[32px] text-white xs:leading-[56.8px] leading-[46.8px] w-full',
 	paragraph: 'font-roboto font-normal text-dimWhite text-[20px] leading-[28px]',
 
 	flexCenter: 'flex justify-center items-center',

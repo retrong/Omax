@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { main } from "../../public";
-import Button from "./Button";
+import { Button } from "./Button";
 
 export default function Stats() {
   return (
@@ -23,7 +23,7 @@ export default function Stats() {
 						</h2>
 					</div>
                     <div className="ml-0 md:ml-20 sm:mt-3 mt-0">
-                        <Button />
+                        <Button >Order now</Button>
                     </div>
 
 				</div>

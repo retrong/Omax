@@ -27,11 +27,6 @@ export default function Features() {
   return (
     <section className={`${styles.paddingY} w-full`}>
         <div>
-            {/* <Image
-                src={blur}
-                alt="Background image of a supplement"
-                className=" blur-md h-full relative "
-            /> */}
             <div className="flex flex-1 flex-col justify-center items-center relative">
                 <p className=" font-roboto font-normal text-green italic">Lorem ipsum</p>
                 <h2 className="font-semibold font-roboto text-primary text-[20px] sm:text-[24px] leading-[24px] sm:leading-[20px]">Lorem ipsum dolor sit</h2>

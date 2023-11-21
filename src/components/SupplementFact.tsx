@@ -15,7 +15,7 @@ export default function SupplementFact() {
                     Lorem ipsum
                 </p>
                 <h2 className="font-semibold font-roboto text-primary text-[20px] sm:text-[24px] leading-[24px] sm:leading-[20px]">
-                    Product Prices
+                    Supplement Fact
                 </h2>
                 <span className="border-2 border-green w-[50px] block mt-4"></span>
             </div>
@@ -55,12 +55,12 @@ export default function SupplementFact() {
                 </div>
             </div> */}
 
-            <div className="grid grid-cols-2 mt-8">
-                <div className="flex justify-center items-center">
+            <div className="grid sm:grid-cols-2 mt-8 grid-cols-1">
+                <div className="flex order-2 justify-center items-center w-full">
                     <Accordion />
                 </div>
 
-                <div className="grid">
+                <div className="grid order-1">
                     <Image src={main} alt="product image" className="" />
                 </div>
 

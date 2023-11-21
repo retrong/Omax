@@ -19,6 +19,11 @@ const config: Config = {
         dimWhite: '#efefef',
         dimAsh: '#595856',
         green: '#5cdb95',
+        white: "#fff",
+
+        dark: '#0a0a0a',
+        darkText: '#fff',
+        black: "#000000"
       },
       fontFamily: {
         roboto: ['Roboto Slab', 'serif']

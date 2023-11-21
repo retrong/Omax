@@ -152,3 +152,65 @@ export const footers = [
         links: '#cta',
     }
 ]
+
+export const footerLinks = [
+	{
+		title: 'Learn More',
+		links: [
+			{
+				name: 'Content',
+				link: '#',
+			},
+			{
+				name: 'How it Works',
+				link: '#',
+			},
+			{
+				name: 'Explore',
+				link: '#/explore/',
+			},
+			{
+				name: 'Terms & Services',
+				link: '#/terms-and-services/',
+			},
+		],
+	},
+	{
+		title: 'Community',
+		links: [
+			{
+				name: 'Help Center',
+				link: '#/help-center/',
+			},
+			{
+				name: 'Partners',
+				link: '#/partners/',
+			},
+			{
+				name: 'Suggestions',
+				link: '#/suggestions/',
+			},
+			{
+				name: 'Blog',
+				link: '#/blog/',
+			},
+			{
+				name: 'Newsletters',
+				link: '#/newsletters/',
+			},
+		],
+	},
+	{
+		title: 'Partner',
+		links: [
+			{
+				name: 'Our Partner',
+				link: '#/our-partner/',
+			},
+			{
+				name: 'Become a Partner',
+				link: '#/become-a-partner/',
+			},
+		],
+	},
+];

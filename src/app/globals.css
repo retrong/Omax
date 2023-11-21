@@ -5,24 +5,47 @@
 @tailwind utilities;
 
 
-* :root {
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto Slab', serif;
     box-sizing: border-box;
     --bg-primary: #201a1c;
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+}
+
+:root{
+    --toggle-bg: #fff;
+    --toggle-fg: #201a1c;
+}
+
+/* dark mode component  start******/
+
+[data-theme="dark"] {
+    @apply bg-dark text-darkText;
+}
+
+main{
+    background-color: var(--background-color);
+    transition: background-color 0.25s ease-in-out;
 }
 
 
+
 /* Navbar component  start******/
+
+header{
+    z-index: 9999;
+}
 
 .sidebar{
     -webkit-animation: slide-right 0.5s ease-in;
     animation: slide-right 0.5s ease-in;
     -moz-animation: slide-right 0.5s ease-in;
     background-color: #5cdb95;
-    width: 60svw !important;
+    width: 100svw !important;
+    height: 100svh;
+    position: fixed;
 }
 
 @keyframes slide-right {
@@ -81,17 +104,20 @@
 	}
 }
 
-/* .bg-image{
-    background-image: url("/omax/public/img5.jpg");
-    filter: blur(2px);
-    -webkit-filter: blur(8px);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: -999;
+.hero-image .img{
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
 
-} */
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+
 
 /* Hero component  end******/
 
@@ -150,7 +176,42 @@ body {
 
 /* feature component  start******/
 
-
 .circle {
     clip-path: circle();
+}
+
+
+/* feedback card starts*/
+
+.feedback-card:hover{
+    transform: scale(1.2);
+    margin: 0 40px;
+}
+
+/* feedback card ends*/
+
+
+/* newsletter card starts*/
+
+.newsletter-color-container{
+    background: linear-gradient(125deg, grey 0%, #d9d6d6 100%  );
+}
+
+.newsletter input{
+    height: 50px;
+    width: 100%;
+}
+
+
+/* modal card starts*/
+
+.modal-content{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }

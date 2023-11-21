@@ -1,14 +1,31 @@
 "use client"
 
+import { db } from '@/server/firebase/firebase.utli';
+import { addDoc, collection, doc } from 'firebase/firestore';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import './formStyle.css';
 
-export default function Form() {
+export default function Form () {
     const {handleSubmit, register, formState: {errors}} = useForm();
 
     function onSubmit(data: any) {
+        e.preventDefault(data);
         console.log(data)
     };
+
+    // const form = collection(db, 'users');
+    // function writeForm() {
+    //     const formData = {
+    //         fullName: 'Roll Ross',
+    //         number: "4623",
+    //         state: 'lagos',
+    //     };
+
+    //     addDoc(form, formData);
+    // }
+    // console.log('firestore!!!');
+    // writeForm();
+
   return (
 		<div>
 			<form
@@ -54,19 +71,19 @@ export default function Form() {
 					<input
 						type="tel"
 						placeholder="+234 1321383112"
-						maxLength={11}
+						maxLength={15}
 						minLength={11}
 						id="num"
 						className=""
 						{...register('number', {
-							required: true,
+							required: true, pattern:/[0-9]/ 
 						})}
 					/>
 					{errors.number && (
 						<span className="error px-2">number is required</span>
 					)}
 					<p className=" text-[13px] font-semibold text-gray-400 leading-[12px] mt-1">
-						Keep 10 digit format with no space and dashes.
+						Keep 11 digit format with no space and dashes.
 					</p>
 				</div>
 				<div>
@@ -84,7 +101,7 @@ export default function Form() {
 				</div>
 
 				<div className="country-state gap-6 sm:gap-4">
-					<div className="flex flex-col">
+					<div className="flex flex-col flex-wrap">
 						<label htmlFor="state" className="">
 							State
 						</label>
@@ -106,8 +123,9 @@ export default function Form() {
 							id="country"
 							placeholder="country"
 							className=" border-1"
-							{...register('country')}
+							{...register('country', {required: true})}
 						>
+                            <option value="null" className='text-black'>Choose Country</option>
 							<option value="Nigeria">Nigeria</option>
 							<option value="United Kingdom">United Kingdom</option>
 							<option value="United States">United States</option>
@@ -122,7 +140,7 @@ export default function Form() {
 						placeholder="Product-size"
 						{...register('size', { required: true })}
 					>
-						<option value="-">-</option>
+						<option value="null" className='text-gray-400'>Choose Product Size</option>
 						<option value="500g">500g</option>
 						<option value="1000g">1000g (1kg)</option>
 						<option value="1.5kg">1.5kg</option>
@@ -159,16 +177,20 @@ export default function Form() {
 							/>
 						</label>
 					</div>
-					<label className="mb-2 font-mono text-[12px] opacity-70 text-black-400">
+					<span className="mb-2 font-mono text-[12px] opacity-70 text-black-400">
 						Subscribe to newsletter to get more info on products and services
-					</label>
-					<button
-						type="submit"
-						className=" border-2 rounded-sm py-2 px-4 border-primary  cursor-pointer"
-					>
-						{' '}
-						Confirm Order
-					</button>
+					</span>
+
+                        {/* modified form button component to fit edit on main page */}
+                    <div className='flex justify-center align-middle mt-5 mb-20'>
+                        <button
+                            type="submit"
+                            className=" border-2 rounded-md py-2 px-4 border-primary hover:bg-secondary hover:text-white cursor-pointer w-[100%]"
+                        >
+                            {' '}
+                            Confirm Order
+                        </button>
+                    </div>
 				</div>
 			</form>
 		</div>
