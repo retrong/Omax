@@ -1,30 +1,23 @@
 "use client"
 
-import { db } from '@/server/firebase/firebase.utli';
-import { addDoc, collection, doc } from 'firebase/firestore';
+import { addDataToFirestore } from '@/server/firebase/firebase.utli';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import './formStyle.css';
 
 export default function Form () {
-    const {handleSubmit, register, formState: {errors}} = useForm();
+    const {handleSubmit, register, reset , formState: {errors}} = useForm();
 
-    function onSubmit(data: any) {
-        e.preventDefault(data);
-        console.log(data)
-    };
+    const onSubmit = async (data: any) => {
+        try {
+            await addDataToFirestore(' YourCollection', data);
+            console.log(data);
 
-    // const form = collection(db, 'users');
-    // function writeForm() {
-    //     const formData = {
-    //         fullName: 'Roll Ross',
-    //         number: "4623",
-    //         state: 'lagos',
-    //     };
-
-    //     addDoc(form, formData);
-    // }
-    // console.log('firestore!!!');
-    // writeForm();
+            reset();
+        }
+        catch (error) {
+            console.error('Error adding document: ', error)
+        }
+    }
 
   return (
 		<div>
@@ -185,7 +178,7 @@ export default function Form () {
                     <div className='flex justify-center align-middle mt-5 mb-20'>
                         <button
                             type="submit"
-                            className=" border-2 rounded-md py-2 px-4 border-primary hover:bg-secondary hover:text-white cursor-pointer w-[100%]"
+                            className="submit-form border-2 rounded-md py-2 px-4 border-primary hover:bg-secondary hover:text-white cursor-pointer w-[100%]"
                         >
                             {' '}
                             Confirm Order

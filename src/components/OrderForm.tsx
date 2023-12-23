@@ -4,6 +4,7 @@ import styles from "./style";
 
 export default function OrderForm() {
   return (
+    <>
 		<section id="order" className={`${styles.paddingY}`}>
 			<div className="">
 				<div className="flex flex-1 flex-col justify-center items-center relative">
@@ -55,11 +56,12 @@ export default function OrderForm() {
 				</div>
 			</div>
 
-			<div className={`${styles.boxWidth} ${styles.flexCenter} bg-opacity-60`}>
-				<div className="items-center align-middle my-10 shadow-xl rounded-md">
-					<ThankYouModal />
-				</div>
-			</div>
 		</section>
+        <div className={`${styles.boxWidth} ${styles.flexCenter} bg-opacity-60`}>
+            <div className="items-center align-middle my-10 shadow-xl rounded-md hidden">
+                <ThankYouModal />
+            </div>
+        </div>
+    </>
 	);
 }
