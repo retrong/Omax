@@ -3,10 +3,11 @@ import { check } from "../../public";
 
 export default function ThankYouModal() {
   return (
-		<div className="flex flex-wrap flex-auto overflow-hidden modal-content">
+		<div className="modal-content">
 			<div className="bg-white shadow-2xl rounded-lg">
 				<div className="px-8 py-4">
 					<div className="flex justify-center flex-col flex-1 w-[300px] h-[300px]">
+
 						<div className="flex justify-center">
 							<Image
 								src={check}
@@ -20,7 +21,7 @@ export default function ThankYouModal() {
 								Thank you your order has been confirmed!
 							</h3>
 							<h4 className="font-roboto font-normal text-[16px] sm:text-[16px] leading-[18px] text-secondary mb-2 text-center">
-								A Customer care representative will be in touch in 24-48 hours to deliver your order.
+								A Customer care representative will be in touch in 24 - 48 hours to deliver your order.
 							</h4>
 						</div>
 						<div className="flex justify-center align-middle mt-2">
