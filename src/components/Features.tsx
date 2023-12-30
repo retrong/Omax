@@ -13,10 +13,10 @@ const FeatureCard = ({icon, title, content, index}: {icon: StaticImageData; titl
             />
         </div>
         <div className="flex flex-1 flex-col flex-wrap ml-3 justify-center items-center">
-            <h3 className="font-roboto font-semibold text-[18px] sm:text-[20px] leading-[26px] sm:leading-[20px] text-primary">
+            <h3 className="font-roboto font-semibold text-[24px] sm:text-[20px] leading-[26px] sm:leading-[20px] text-primary">
                 {title}
             </h3>
-            <p className="font-roboto font-normal text-[16px] sm:text-[18px] leading-[18px] sm:leading-[16px] text-primary mt-2 text-center">
+            <p className="font-roboto font-normal text-[20px] sm:text-[18px] leading-[18px] sm:leading-[16px] text-primary mt-2 text-center">
                 {content}
             </p>
         </div>

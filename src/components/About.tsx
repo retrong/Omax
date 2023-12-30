@@ -26,8 +26,8 @@ export default function About() {
 
                 <div className="flex flex-col justify-center">
                     <div>
-                        <p className=" italic text-green font-normal font-roboto">Your Dream</p>
-                        <h4 className=" font-roboto font-medium text-primary text-[18px] leading-[22px] mb-5 mt-1">Body is just a click away</h4>
+                        <p className=" italic text-green text-[20px] sm:text-[24px] font-normal font-roboto">Your Dream</p>
+                        <h4 className=" font-roboto font-medium text-primary text-[24px] sm:text-[18px] leading-[22px] mb-5 mt-1">Body is just a click away</h4>
                     </div>
                     
                     <div className="flex flex-wrap relative justify-between items-center">
@@ -36,10 +36,10 @@ export default function About() {
                                 <div key={about.id} className="flex gap-2 max-w-[250px]">
                                     <div className="inline-block h-auto min-h-[1em] w-2 self-stretch bg-green opacity-100 dark:opacity-50"></div>
                                     <div className="">
-                                        <h4 className=" font-roboto font-semibold text-secondary text-[18px] leading-[18px]">
+                                        <h4 className=" font-roboto font-semibold text-secondary text-[22px] sm:text-[18px] leading-[18px]">
                                             {about.title}
                                         </h4>
-                                        <p className="font-roboto font-normal text-primary text-[16px] leading-[16px] mt-2">
+                                        <p className="font-roboto font-normal text-primary text-[18px] sm:text-[16px] leading-[16px] mt-2">
                                             {about.content}
                                         </p>
                                     </div>
