@@ -89,13 +89,13 @@ export default function Home() {
 					<SupplementFact />
 				</div>
 			</div>
-			<div className="newsletter-color-container bg-opacity-30 mb-10">
+			{/* <div className="newsletter-color-container bg-opacity-30 mb-10">
 				<div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
 					<div className={`${styles.boxWidth}`}>
 						<Newsletter />
 					</div>
 				</div>
-			</div>
+			</div> */}
 			<div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
 				<div className={`${styles.boxWidth}`}>
 					<Cta />

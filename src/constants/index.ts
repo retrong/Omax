@@ -64,7 +64,7 @@ export const abouts = [
     },
     {
         id: 'about-1',
-        title: 'Weight Loss',
+        title: 'How to Use',
         content: '"write up for the lean protein powder" lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
     },
     {
@@ -155,6 +155,7 @@ export const footers = [
 
 export const footerLinks = [
 	{
+        id: 'footer-4',
 		title: 'Learn More',
 		links: [
 			{
@@ -162,13 +163,13 @@ export const footerLinks = [
 				link: '#',
 			},
 			{
-				name: 'How it Works',
+				name: 'How to Use',
 				link: '#',
 			},
-			{
-				name: 'Explore',
-				link: '#/explore/',
-			},
+			// {
+			// 	name: 'Explore',
+			// 	link: '#/explore/',
+			// },
 			{
 				name: 'Terms & Services',
 				link: '#/terms-and-services/',
@@ -176,16 +177,9 @@ export const footerLinks = [
 		],
 	},
 	{
+        id: 'footer-5',
 		title: 'Community',
 		links: [
-			{
-				name: 'Help Center',
-				link: '#/help-center/',
-			},
-			{
-				name: 'Partners',
-				link: '#/partners/',
-			},
 			{
 				name: 'Suggestions',
 				link: '#/suggestions/',
@@ -201,6 +195,7 @@ export const footerLinks = [
 		],
 	},
 	{
+        id: 'footer-6',
 		title: 'Partner',
 		links: [
 			{

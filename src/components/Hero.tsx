@@ -21,7 +21,7 @@ export default function Hero() {
                     Supplement for <br /> 
                     Your Strength
                 </h1>
-                <p className=" max-w-[470px] font-normal font-roboto mt-4 text-secondary">Nutritional Supplement filled with natural ingredents, all working together to support your strength and health</p>
+                <p className=" max-w-[470px] font-normal font-roboto text-[20px] sm:text-[20px] mt-4 text-secondary">Nutritional Supplement filled with natural ingredents, all working together to support your strength and health</p>
 
                 <div className="mt-10 flex flex-wrap justify-between">
                     <Link href="#order">

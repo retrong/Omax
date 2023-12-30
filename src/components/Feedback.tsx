@@ -50,8 +50,8 @@ export default class Feedback extends Component {
         return (
             <section className={`${styles.paddingY} w-full`}>
                 <div className="items-center">
-                    <div className="flex flex-col flex-wrap justify-center items-center">
-                        <p className="font-roboto font-semibold italic text-green text-[18px] sm:text-[18px] leading-[18px] ">Muscle Gain and Weight Loose With Omax</p>
+                    <div className="flex flex-col flex-wrap justify-center items-center text-center sm:mb-0 mb-5">
+                        <p className="font-roboto font-semibold italic text-green text-[18px] sm:text-[18px] leading-[18px]">Muscle Gain and Weight Loose With Omax</p>
                         <h3 className="font-semibold font-roboto text-primary text-[20px] sm:text-[24px] leading-[24px] sm:leading-[20px] mt-2">Client Feedback</h3>
                     </div>
         

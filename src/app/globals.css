@@ -25,6 +25,9 @@
     @apply bg-dark text-darkText;
 }
 
+/* dark mode component  ends******/
+
+
 main{
     background-color: var(--background-color);
     transition: background-color 0.25s ease-in-out;
@@ -184,7 +187,7 @@ body {
 /* feedback card starts*/
 
 .feedback-card:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     margin: 0 40px;
 }
 

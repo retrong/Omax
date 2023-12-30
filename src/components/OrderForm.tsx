@@ -18,7 +18,7 @@ export default function OrderForm() {
 				</div>
 
 				<div className="flex flex-col sm:flex-row w-full mt-4">
-					<div className="bg-white p-10 w-full md:w-[80%] ss:w-[70%] flex-wrap rounded-md">
+					<div className="bg-white py-10 px-5 w-full md:w-[80%] ss:w-[70%] flex-wrap rounded-md">
 						<div>
 							<div>
 								<h3 className="font-semibold font-roboto text-primary text-[24px] sm:text-[26px] leading-[26px] sm:leading-[24px]">
@@ -30,7 +30,7 @@ export default function OrderForm() {
 								</p>
 							</div>
 							<div className="mt-10">
-								<h4 className="font-semibold font-roboto text-primary text-[20px] sm:text-[24px] leading-[24px] sm:leading-[20px]">
+								<h4 className="font-semibold font-roboto text-primary text-[24px] sm:text-[24px] leading-[24px] sm:leading-[20px]">
 									Delivery address
 								</h4>
 							</div>
