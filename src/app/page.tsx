@@ -21,10 +21,13 @@ export default function LandingPage() {
   return (
 		<main className="" data-theme={isDark ? "dark" : "light"}>
             <Home />
-            <Toggle
+
+            {/* Changed my mind on adding this toggle feature right now */}
+
+            {/* <Toggle
                 isChecked={isDark}  
-                handleChange={() => setIsDark(!isDark)}
-            />
+                handleChange={() => setIsDark(!isDark)}i
+            /> */}
 		</main>
 	);
 }
