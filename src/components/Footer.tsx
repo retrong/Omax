@@ -5,7 +5,7 @@ export default function Footer() {
   return (
 		<section className={`w-full h-auto py-4 sm:py-8`}>
 			<div className="flex sm:justify-between md:flex-row flex-col gap-4 justify-start items-start sm:w-auto w-full">
-				<div className="sm:max-w-[250px] w-full flex flex-col flex-wrap gap-2">
+				<div className="sm:max-w-[350px] w-full flex flex-col flex-wrap gap-2">
 					<h1
 						className={`font-roboto font-bold xs:text-[50px] text-[36px] text-dimWhite leading-[56.4px] xs:leading-[44px] w-full  flex justify-start`}
 					>
@@ -53,10 +53,10 @@ export default function Footer() {
 
 					<div>
 						<h4 className="font-roboto font-normal xs:text-[18px] text-[18px] text-dimWhite leading-[20px] xs:leading-[22px] w-full mb-2">
-							Open Office Hours:
+							Office Hours:
 						</h4>
-						<p className="contact-us-text mb-2">Mon - Fri: 9:00 - 6:00</p>
-						<p className="contact-us-text mb-2">Saturday: 10:00 - 4:00</p>
+						<p className="contact-us-text mb-2">Mon - Fri: 24hrs</p>
+						<p className="contact-us-text mb-2">Saturday: 10:00 - 16:00</p>
 					</div>
 
 					<div className="">
