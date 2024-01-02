@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./Button";
 import styles from "./style";
 
@@ -15,9 +16,9 @@ export default function Cta() {
 				</p>
 			</div>
 
-			<div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
+			<Link href="#order" className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
 				<Button>Order now</Button>
-			</div>
+			</Link>
 		</section>
 	);
 }
