@@ -1,4 +1,3 @@
-import ThankYouModal from "./ThankYouModal";
 import Form from "./form/Form";
 import styles from "./style";
 
@@ -57,11 +56,6 @@ export default function OrderForm() {
 			</div>
 
 		</section>
-        <div className={`${styles.boxWidth} ${styles.flexCenter} bg-opacity-60`}>
-            <div className="items-center align-middle my-10 shadow-xl rounded-md">
-                <ThankYouModal />
-            </div>
-        </div>
     </>
 	);
 }
