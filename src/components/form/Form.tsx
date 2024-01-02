@@ -2,7 +2,7 @@
 
 import { addDataToFirestore } from '@/server/firebase/firebase.utli';
 import { useState } from 'react';
-import { SubmitHandler, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import ThankYouModal from '../ThankYouModal';
 import './formStyle.css';
 
@@ -17,14 +17,14 @@ export default function Form () {
     const onSubmit = async (data: any) => {
         try {
             await addDataToFirestore(' YourCollection', data);
-            console.log(data);
+            // console.log(data);
 
             // Opens the modal after successful form submission
             openModal();
 
         reset();
         }catch (error) {
-            console.error('Error adding document: ', error)
+            // console.error('Error adding document: ', error)
         }
     }
 

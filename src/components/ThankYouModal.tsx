@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { check } from "../../public";
 
-const ThankYouModal = ({isOpen, closeModal}) => {
+const ThankYouModal = ({isOpen, closeModal}: {isOpen: boolean, closeModal: any }) => {
   return (
 		<div className={`modal ${isOpen ? 'open' : ''}`}>
 			<div className=" shadow-2xl rounded-lg modal-content">
