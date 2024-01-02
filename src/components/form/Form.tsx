@@ -1,20 +1,29 @@
 "use client"
 
 import { addDataToFirestore } from '@/server/firebase/firebase.utli';
+import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import ThankYouModal from '../ThankYouModal';
 import './formStyle.css';
 
 export default function Form () {
     const {handleSubmit, register, reset , formState: {errors}} = useForm();
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
+
 
     const onSubmit = async (data: any) => {
         try {
             await addDataToFirestore(' YourCollection', data);
             console.log(data);
 
-            reset();
-        }
-        catch (error) {
+            // Opens the modal after successful form submission
+            openModal();
+
+        reset();
+        }catch (error) {
             console.error('Error adding document: ', error)
         }
     }
@@ -186,6 +195,12 @@ export default function Form () {
                     </div>
 				</div>
 			</form>
+
+
+
+            <div>
+                <ThankYouModal isOpen={isModalOpen} closeModal={closeModal} />
+            </div>
 		</div>
 	);
 }

@@ -58,7 +58,7 @@ export default function OrderForm() {
 
 		</section>
         <div className={`${styles.boxWidth} ${styles.flexCenter} bg-opacity-60`}>
-            <div className="items-center align-middle my-10 shadow-xl rounded-md hidden">
+            <div className="items-center align-middle my-10 shadow-xl rounded-md">
                 <ThankYouModal />
             </div>
         </div>

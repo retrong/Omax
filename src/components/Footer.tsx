@@ -21,10 +21,10 @@ export default function Footer() {
 					</p>
 				</div>
 
-				<div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10 ">
+				<div className="flex-[1.5] w-full flex flex-row ss:justify-between justify-left flex-wrap md:mt-0 mt-10 ">
 					{footerLinks.map((footerLink) => (
 						<div key={footerLink.id} className="text-white px-4 py-2">
-							<h4 className="font-cabin font-medium text-[20px] leading-[27px] text-white">
+							<h4 className="font-cabin font-semibold text-[22px] leading-[27px] text-white">
 								{footerLink.title}
 							</h4>
 							<ul className=" mt-2 list-none cursor-pointer">
