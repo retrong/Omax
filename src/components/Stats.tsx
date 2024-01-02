@@ -22,9 +22,9 @@ export default function Stats() {
 							Protein Powder with Powerful all in one formular
 						</h2>
 					</div>
-                    <div className="ml-0 md:ml-20 sm:mt-3 mt-0">
+                    <a href="#order" className="ml-0 md:ml-20 sm:mt-3 mt-0">
                         <Button >Order now</Button>
-                    </div>
+                    </a>
 
 				</div>
 			</div>
