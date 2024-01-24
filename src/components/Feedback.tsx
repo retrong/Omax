@@ -59,16 +59,16 @@ export default class Feedback extends Component {
                         {feedbacks.map((feedback) => (
                             <div key={feedback.id} className="">
                                 <div className="flex justify-center items-center">
-                                    <div className=" flex flex-col justify-center items-center w-[300px] h-[400px] bg-white shadow-xl p-5 rounded-lg gap-4 feedback-card">
+                                    <div className=" flex flex-col justify-center items-center w-[300px] h-[400px] bg-purple-200 shadow-xl shadow-slate-300 p-5 rounded-lg gap-4 feedback-card mb-4">
                                         <Image 
                                             src={feedback.icon} 
                                             alt="testimony image"
                                             className="w-[120px] h-[120px] object-contain rounded-full" 
                                         />
-                                        <h3 className="font-roboto font-normal text-primary text-[20px] leading-[18px]">
+                                        <h3 className="font-roboto font-normal text-black text-[20px] leading-[18px]">
                                             {feedback.title}
                                         </h3>
-                                        <p className="font-roboto font-light text-primary text-[18px] leading-[18px] text-center mt-5">
+                                        <p className="font-roboto font-light text-black text-[18px] leading-[20px] text-center mt-5">
                                             {feedback.content}
                                         </p>
                                     </div>
