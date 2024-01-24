@@ -32,6 +32,9 @@ export default function ProductPrice() {
 										<h3 className="font-roboto font-normal text-primary text-[20px] leading-[18px]">
 											Basic
 										</h3>
+										<h4 className="font-roboto font-normal text-primary text-[18px] leading-[18px]">
+											Cocoa flavour
+										</h4>
 										<p className="font-roboto font-semibold text-primary sm:text-[24px] text-[20px] leading-[22px] text-center mt-5">
 											$8.99
 										</p>
@@ -55,6 +58,9 @@ export default function ProductPrice() {
 									<h3 className="font-roboto font-normal text-primary text-[20px] leading-[18px]">
 										Standard
 									</h3>
+									<h4 className="font-roboto font-normal text-primary text-[18px] leading-[18px]">
+										Vanilla flavour
+									</h4>
 									<p className="font-roboto font-semibold text-primary sm:text-[24px] text-[20px] leading-[18px] text-center mt-5">
 										$15.88
 									</p>
@@ -77,6 +83,9 @@ export default function ProductPrice() {
 									<h3 className="font-roboto font-normal text-primary text-[20px] leading-[18px]">
 										Premium
 									</h3>
+									<h4 className="font-roboto font-normal text-primary text-[18px] leading-[18px]">
+										Plain blend
+									</h4>
 									<p className="font-roboto font-semibold text-primary sm:text-[24px] text-[20px] leading-[18px] text-center mt-5">
 										$23.90
 									</p>

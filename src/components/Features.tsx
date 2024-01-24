@@ -25,10 +25,10 @@ const FeatureCard = ({icon, title, content, index}: {icon: StaticImageData; titl
 
 export default function Features() {
   return (
-    <section className={`${styles.paddingY} w-full`}>
+    <section id="features" className={`${styles.paddingY} w-full`}>
         <div>
             <div className="flex flex-1 flex-col justify-center items-center relative">
-                <p className=" font-roboto font-normal text-green italic">Lorem ipsum</p>
+                <p className=" font-roboto font-normal text-green italic">Features</p>
                 <h2 className="font-semibold font-roboto text-primary text-[20px] sm:text-[24px] leading-[24px] sm:leading-[20px]">Lorem ipsum dolor sit</h2>
                 <span className="border-2 border-green w-[50px] block mt-3"></span>
 

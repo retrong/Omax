@@ -25,7 +25,6 @@ export default function Accordion() {
                     <div className='title' onClick={() => toggle(i)}>
                         <h2>{product.title}</h2>
                         <Image src={selected === i ? down : up} alt='navigation' />
-                        {/* <span>{selected === i ? down : up }</span> */}
                     </div>
                     <div className={`${selected === i ? 'content-show' : 'content'} content-main`}>
                         {product.content}

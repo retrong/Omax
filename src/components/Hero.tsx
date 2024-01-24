@@ -27,7 +27,9 @@ export default function Hero() {
                     <Link href="#order">
                         <Button>Shop now</Button>
                     </Link>
-                    <LearnBtn styles="xs:ml-16 ml-2" />
+                    <Link href="#features">
+                        <LearnBtn styles="xs:ml-16 ml-2" />
+                    </Link>
                 </div>
             </div>
 

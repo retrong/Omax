@@ -55,21 +55,21 @@ export const abouts = [
     {
         id: 'about-1',
         title: 'Increased Energy',
+        content: 'reduce fatigue and increase energy et consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
+    },
+    {
+        id: 'about-2',
+        title: 'Low Sugar',
         content: 'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
     },
     {
-        id: 'about-1',
-        title: 'Bone Building',
-        content: 'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
+        id: 'about-3',
+        title: 'Build Muscle',
+        content: 'Help build clean strong muscles lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
     },
     {
-        id: 'about-1',
+        id: 'about-4',
         title: 'How to Use',
-        content: '"write up for the lean protein powder" lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
-    },
-    {
-        id: 'about-1',
-        title: 'Muscle mass',
         content: 'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut'
     }
 ];
@@ -108,28 +108,28 @@ export const products = [
 	{
 		id: 'product-1',
 		icon: test,
-		title: 'Almond Nut',
+		title: 'Omega-3 & 6',
 		content:
 			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
 	},
 	{
 		id: 'product-2',
 		icon: test,
-		title: 'Chia Seed',
+		title: 'Potassium',
 		content:
 			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
 	},
 	{
 		id: 'product-3',
 		icon: test,
-		title: 'Soy beans',
+		title: 'Antioxidants',
 		content:
 			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
 	},
 	{
 		id: 'product-4',
 		icon: test,
-		title: 'Cocoa',
+		title: 'Calcium',
 		content:
 			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
 	},

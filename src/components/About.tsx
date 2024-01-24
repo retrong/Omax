@@ -5,7 +5,7 @@ import styles from "./style";
 
 export default function About() {
   return (
-    <section className={`${styles.paddingY}`}>
+    <section id="about" className={`${styles.paddingY}`}>
         <div>
             <div>
                 <div className="flex flex-1 flex-col justify-center items-center relative">

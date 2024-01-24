@@ -64,23 +64,32 @@ export default function Footer() {
 						<p className="contact-us-text my-4">primemaxprotein@gmail.com</p>
 						<span className="border border-gray-500 w-full flex"></span>
 					</div>
-
 				</div>
 			</div>
-            <div className="flex sm:flex-row flex-col py-5 gap-2">
-                <div className="">
-                    <h4 className="font-cabin font-semibold sm:text-[28px] sm:leading-[34px] text-[22px] leading-[28.4px] text-dimWhite">
-                        Subscribe to Newsletter
-                    </h4>
+            <div className="flex justify-end">
+                <div className="flex sm:flex-row justify-end w-[35rem] flex-col py-5 gap-4">
+                    <div className="">
+                        <h4 className="font-cabin font-normal sm:text-[16px] sm:leading-[24px] text-[18px] leading-[20.4px] text-dimWhite">
+                            Get helpful tips and industry trend that will help you in your
+                            fitness journey and interesting offers. Subscribe to our
+                            newsletter today!
+                        </h4>
+                    </div>
+                    <div className="sm:ml-5 ml-0">
+                        <input
+                            type="email"
+                            placeholder="email"
+                            className="w-[250px] max-w-[250px]"
+                        />
+                    </div>
                 </div>
-                <div className="sm:ml-10 ml-0">
-                    <input type="email" placeholder="email" className="sm:w-[350px] max-w-screen-sm" />
-                </div>
+
             </div>
 			<div className="w-full items-center pt-6 mt-4 border-t-2 border-t-dimAsh flex justify-end">
 				<p className=" font-mono text-[16px] sm:text-[16px] leading-[18px] sm:leading-[16px] text-dimWhite">
-					2022 <span className=" text-red-500">PrimeMax.</span> All Rights
-					Reserved.{' '}
+					{' '}
+					copyright &copy; 2023 All Rights Reserved. Prime
+					<span className=" text-red-500">Max.</span>
 				</p>
 			</div>
 		</section>
