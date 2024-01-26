@@ -59,7 +59,7 @@ export default class Feedback extends Component {
                         {feedbacks.map((feedback) => (
                             <div key={feedback.id} className="">
                                 <div className="flex justify-center items-center">
-                                    <div className=" flex flex-col justify-center items-center w-[300px] h-[400px] bg-purple-200 shadow-xl shadow-slate-300 p-5 rounded-lg gap-4 feedback-card mb-4">
+                                    <div className=" flex flex-col justify-center items-center w-[300px] h-[400px] bg-green shadow-xl shadow-slate-300 p-5 rounded-lg gap-4 feedback-card mb-4">
                                         <Image 
                                             src={feedback.icon} 
                                             alt="testimony image"
