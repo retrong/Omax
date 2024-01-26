@@ -28,6 +28,8 @@ export default function Form () {
         }
     }
 
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
   return (
 		<div>
 			<form
@@ -37,21 +39,23 @@ export default function Form () {
 			>
 				<div>
 					<label htmlFor="fullName">Full Name</label>
-					<input 
+					<input
 						type="text"
 						placeholder="Eg John Doe"
 						id="fullName"
 						className=""
 						{...register('fullName', {
 							required: true,
-							minLength: 3,
+							minLength: 3, pattern: /^[A-Z][a-z]+\s[a-zA-Z\s\.]+/,
 						})}
 					/>
-					{errors.fullName?.type == "required" && (
+					{errors.fullName?.type == 'required' && (
 						<span className="error px-2">fullname is required</span>
 					)}
-					{errors.fullName?.type == "minLength" && (
-						<span className="error px-2">Name should be more than 3 characters</span>
+					{errors.fullName?.type == 'minLength' && (
+						<span className="error px-2">
+							Name should be more than 3 characters
+						</span>
 					)}
 				</div>
 				<div>
@@ -61,7 +65,7 @@ export default function Form () {
 						placeholder="johndoe@mail.com"
 						id="email"
 						className=""
-						{...register('email', { required: true })}
+						{...register('email', { required: true, pattern: emailRegex })}
 					/>
 					{errors.email && (
 						<span className="error px-2">email is required</span>
@@ -73,12 +77,14 @@ export default function Form () {
 					<input
 						type="tel"
 						placeholder="+234 1321383112"
-						maxLength={15}
+						maxLength={13}
 						minLength={11}
 						id="num"
 						className=""
 						{...register('number', {
-							required: true, pattern:/[0-9]/ 
+							required: true,
+							pattern:
+								/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
 						})}
 					/>
 					{errors.number && (
@@ -125,9 +131,11 @@ export default function Form () {
 							id="country"
 							placeholder="country"
 							className=" border-1"
-							{...register('country', {required: true})}
+							{...register('country', { required: true })}
 						>
-                            <option value="null" className='text-black'>Choose Country</option>
+							<option value="null" className="text-black">
+								Choose Country
+							</option>
 							<option value="Nigeria">Nigeria</option>
 							<option value="United Kingdom">United Kingdom</option>
 							<option value="United States">United States</option>
@@ -142,7 +150,9 @@ export default function Form () {
 						placeholder="Product-size"
 						{...register('size', { required: true })}
 					>
-						<option value="null" className='text-gray-400'>Choose Product Size</option>
+						<option value="null" className="text-gray-400">
+							Choose Product Size
+						</option>
 						<option value="500g">500g</option>
 						<option value="1000g">1000g (1kg)</option>
 						<option value="1.5kg">1.5kg</option>
@@ -183,24 +193,22 @@ export default function Form () {
 						Subscribe to newsletter to get more info on products and services
 					</span>
 
-                        {/* modified form button component to fit edit on main page */}
-                    <div className='flex justify-center align-middle mt-5 mb-20'>
-                        <button
-                            type="submit"
-                            className="submit-form border-2 rounded-md py-2 px-4 border-primary hover:bg-secondary hover:text-white cursor-pointer w-[100%]"
-                        >
-                            {' '}
-                            Confirm Order
-                        </button>
-                    </div>
+					{/* modified form button component to fit edit on main page */}
+					<div className="flex justify-center align-middle mt-5 mb-20">
+						<button
+							type="submit"
+							className="submit-form border-2 rounded-md py-2 px-4 border-primary hover:bg-secondary hover:text-white cursor-pointer w-[100%]"
+						>
+							{' '}
+							Confirm Order
+						</button>
+					</div>
 				</div>
 			</form>
 
-
-
-            <div>
-                <ThankYouModal isOpen={isModalOpen} closeModal={closeModal} />
-            </div>
+			<div>
+				<ThankYouModal isOpen={isModalOpen} closeModal={closeModal} />
+			</div>
 		</div>
 	);
 }
