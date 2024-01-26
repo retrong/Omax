@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import Gurantee from '@/components/Gurantee';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
-import Newsletter from '@/components/Newsletter';
+// import Newsletter from '@/components/Newsletter';
 import OrderForm from '@/components/OrderForm';
 import ProductPrice from '@/components/ProductPrice';
 import Stats from '@/components/Stats';
