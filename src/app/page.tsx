@@ -1,7 +1,7 @@
 "use client"
 
-import { Toggle } from "@/components/toggle/Toggle";
-import { useState } from "react";
+// import { Toggle } from "@/components/toggle/Toggle";
+// import { useState } from "react";
 import useLocalStorage from "use-local-storage";
 
 import Home from "./(routes)/home/page";
