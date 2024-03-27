@@ -17,11 +17,11 @@ const ThankYouModal = ({isOpen, closeModal}: {isOpen: boolean, closeModal: any }
 
 						<div className="py-2">
 							<h3 className="font-roboto font-semibold text-[18px] sm:text-[20px] leading-[18px] text-secondary mb-4 text-center">
-								Thank you your order has been confirmed!
+								Thank you!{' '}Your order has been confirmed.
 							</h3>
 							<h4 className="font-roboto font-normal text-[16px] sm:text-[16px] leading-[18px] text-secondary mb-2 text-center">
 								A Customer care representative will be in touch in 24 - 48 hours
-								to deliver your order.
+								to confirm and process delivery of your order.
 							</h4>
 						</div>
 						<div className="flex justify-center align-middle mt-2">

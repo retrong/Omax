@@ -20,7 +20,7 @@ export default function ProductPrice() {
 				<div>
 					<div className="pt-6">
 						<div className="flex sm:justify-between items-center flex-wrap gap-6 justify-center">
-							<div className=" flex flex-col justify-center items-center w-[280px] h-[320px] bg-dimWhite shadow-xl p-5 rounded-lg gap-4 text-center py-6 mb-0 sm:mb-3">
+							<div className=" flex flex-col justify-center items-center w-[280px] h-[320px] bg-dimWhite hover:bg-white shadow-xl p-5 rounded-lg gap-4 text-center py-6 mb-0 sm:mb-3">
 								<div className="w-full flex flex-col items-center justify-center py-[10px]">
 									<Image
 										src={blur}

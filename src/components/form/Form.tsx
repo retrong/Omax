@@ -17,7 +17,7 @@ export default function Form () {
     const onSubmit = async (data: any) => {
         try {
             await addDataToFirestore(' YourCollection', data);
-            // console.log(data);
+            // console.log(data, 'data set');
 
             // Opens the modal after successful form submission
             openModal();
@@ -108,7 +108,7 @@ export default function Form () {
 					)}
 				</div>
 
-				<div className="country-state gap-6 sm:gap-4">
+				<div className="country-state gap-6 sm:gap-4 align-middle flex">
 					<div className="flex flex-col flex-wrap">
 						<label htmlFor="state" className="">
 							State
@@ -130,7 +130,7 @@ export default function Form () {
 						<select
 							id="country"
 							placeholder="country"
-							className=" border-1"
+							className=" border-1 h-[2.6rem]"
 							{...register('country', { required: true })}
 						>
 							<option value="null" className="text-black">
@@ -197,7 +197,7 @@ export default function Form () {
 					<div className="flex justify-center align-middle mt-5 mb-20">
 						<button
 							type="submit"
-							className="submit-form border-2 rounded-md py-2 px-4 border-primary hover:bg-secondary hover:text-white cursor-pointer w-[100%]"
+							className="submit-form border-2 rounded-md py-2 px-4 border-primary bg-secondary hover:bg-white text-white hover:text-secondary cursor-pointer w-[100%] focus:bg-primary focus:opacity-50 active:bg-secondary focus:text-white focus:text-opacity-100"
 						>
 							{' '}
 							Confirm Order

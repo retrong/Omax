@@ -4,15 +4,15 @@ import { blur } from "../../public";
 import styles from "./style";
 
 const FeatureCard = ({icon, title, content, index}: {icon: StaticImageData; title: string; content: string; index: number}) => (
-    <div className={`flex flex-col ${index !== features.length -1 ? "mb-0" : "mb-0"} justify-center items-center max-w-[300px] sm:mb-0 mb-5`}>
+    <div className={`flex flex-col ${index !== features.length -1 ? "mb-0" : "mb-0"} justify-center items-center max-w-[250px] sm:mb-0 mb-5`}>
         <div className="h-[64px] w-[64px] rounded-full">
             <Image 
                 src={icon} 
                 alt="feature icon image"
-                className="w-[100%]  h-[100%] object-contain" 
+                className="w-[64px]  h-[64px] object-contain" 
             />
         </div>
-        <div className="flex flex-1 flex-col flex-wrap ml-3 justify-center items-center">
+        <div className="flex flex-col flex-wrap justify-center items-center">
             <h3 className="font-roboto font-semibold text-[24px] sm:text-[20px] leading-[26px] sm:leading-[20px] text-primary">
                 {title}
             </h3>
@@ -37,7 +37,7 @@ export default function Features() {
             <div className="flex flex-wrap flex-row relative pt-6 sm:pt-16 w-full justify-center sm:justify-between items-center">
                 
                 {features.map((feature, index) => (
-                    <div key={feature.id} className="">
+                    <div key={feature.id} className="md:mt-0 mt-2">
                         <FeatureCard {...feature} index={index} />
                     </div>
                 ))}
