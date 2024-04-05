@@ -23,7 +23,7 @@ export default function Stats() {
 						</h2>
 					</div>
                     <a href="#order" className="ml-0 md:ml-20 sm:mt-3 mt-0">
-                        <Button >Order now</Button>
+                        <Button styles="" >Order now</Button>
                     </a>
 
 				</div>

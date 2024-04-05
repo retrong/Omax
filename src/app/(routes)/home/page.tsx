@@ -44,7 +44,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="bg-green max-h-[20%]">
+			<div className="bg-green max-h-[20%] rounded-2xl bg-blend-color-burn shadow-xl">
 				<div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
 					<div className={`${styles.boxWidth}`}>
 						<Stats />

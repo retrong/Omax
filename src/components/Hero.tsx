@@ -25,10 +25,10 @@ export default function Hero() {
 
                 <div className="mt-10 flex flex-wrap justify-between">
                     <Link href="#order">
-                        <Button>Shop now</Button>
+                        <Button styles="">Shop now</Button>
                     </Link>
                     <Link href="#features">
-                        <LearnBtn styles="xs:ml-16 ml-2" />
+                        <LearnBtn styles="xs:ml-16 ml-2">Learn More</LearnBtn>
                     </Link>
                 </div>
             </div>
@@ -46,10 +46,3 @@ export default function Hero() {
     </main>
   )
 }
-
-
-// Build
-//  a hero section with text on the right and image on the left
-// a button below the text to order and 
-// 1. use a grid to divide page content 
-// 2. 
