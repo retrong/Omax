@@ -1,4 +1,4 @@
-import { test } from "../../public";
+import { blur, second, test } from "../../public";
 
 export const navLinks = [
     {
@@ -132,6 +132,37 @@ export const products = [
 		title: 'Calcium',
 		content:
 			'lorem ipsum dolor sit amet consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut lorem ipsum dolor sit amet consectetur adipiscing elit sed diam',
+	},
+];
+
+export const productDetails = [
+	{
+		productTitle: 'primax',
+		ProductPrice: '58.9',
+		productFlavour: 'Cocao flavour',
+		productSize: '500g',
+		img: second,
+	},
+	{
+		productTitle: 'primax',
+		ProductPrice: '89.9',
+		productFlavour: 'Cocao flavour',
+		productSize: '1000g',
+		img: blur,
+	},
+	{
+		productTitle: 'primax',
+		ProductPrice: '149.9',
+		productFlavour: 'Vanilla flavour',
+		productSize: '1.5kg',
+		img: blur,
+	},
+	{
+		productTitle: 'primax',
+		ProductPrice: '58.9',
+		productFlavour: 'Cocao flavour',
+		productSize: '500g',
+		img: second,
 	},
 ];
 

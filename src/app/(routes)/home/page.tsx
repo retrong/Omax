@@ -44,7 +44,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="bg-green max-h-[20%] rounded-2xl bg-blend-color-burn shadow-xl">
+			<div className="bg-gradient-to-r from-[#00CA72] to-[#20B15A] max-h-[20%] rounded-2xl bg-blend-color-burn shadow-xl">
 				<div className={`${styles.paddingX} ${styles.flexStart} mx-0 md:mx-16`}>
 					<div className={`${styles.boxWidth}`}>
 						<Stats />
@@ -111,3 +111,10 @@ export default function Home() {
 // order form component
 // will send an email to process order and also place it in an admin list to show the online orders
 // footer component
+
+// colors to try
+// #20B15A lemon green
+// #00CA72 lighter green
+// #F8FFF9 differnt shade of white
+// #333333 different shade of black
+// #F55F1D orange
