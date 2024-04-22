@@ -13,7 +13,7 @@ interface productCardProps{
 
 const ProductCard: React.FC<productCardProps> = ({productPrice, productTitle, productSize, productFlavour, img}) => {
   return (
-		<div className="flex flex-col w-[250px] h-fit bg-[#fbf7f5] items-center border border-bg-cyan-300 rounded-2xl">
+		<div className="flex flex-col w-[280px] h-fit bg-[#fafafa] items-center border border-bg-cyan-300 rounded-2xl">
 			<div className=" w-[200px] h-[200px] my-5">
 				<Image
 					src={img}

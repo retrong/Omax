@@ -69,7 +69,7 @@ export default function Home() {
 					<About />
 				</div>
 			</div>
-			<div className="bg-slate-400 bg-opacity-30">
+			<div className="bg-slate-300 bg-opacity-30">
 				<div className={`${styles.paddingX} ${styles.flexStart}`}>
 					<div className={`${styles.boxWidth}`}>
 						<Feedback />
