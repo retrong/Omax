@@ -22,7 +22,7 @@ export default function Sidebar() {
 			<div
 				className={`${
 					toggle ? 'flex' : 'hidden'
-				} p-6 fixed flex-col right-0 my-2 top-20 rounded-xl z-[100] sidebar`}
+				} p-6 fixed flex-col right-0 my-2 top-20 rounded-xl z-[0] sidebar`}
 			>
 				<ul className="list-none flex flex-col items-center flex-1">
 					{navLinks.map((nav, index) => (
@@ -36,7 +36,7 @@ export default function Sidebar() {
 				</ul>
 
 				<Link href="#" className='flex items-center justify-center'> 
-                    <Button>Order now</Button>
+                    <Button styles=''>Order now</Button>
                 </Link>
 			</div>
 		</div>

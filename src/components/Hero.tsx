@@ -12,7 +12,7 @@ export default function Hero() {
     const eased = easeIn(0.5);
     
   return (
-    <main id="home" className={`flex md:flex-row flex-col py-6 sm:py-10`}>
+    <main id="home" className={`flex md:flex-row flex-col py-6 sm:py-10 sm:mt-0 mt-20`}>
         <div className={`${styles.flexStart} flex-col flex-1`}>
             <div className="flex flex-col items-start hero-text">
                 <p className="text-green font-roboto font-semibold ss:text-[18px] text-[16px] ss:leading-[18px] leading-[16px]">100% Organic Protein Powder</p>
@@ -25,10 +25,10 @@ export default function Hero() {
 
                 <div className="mt-10 flex flex-wrap justify-between">
                     <Link href="#order">
-                        <Button styles="">Shop now</Button>
+                        <Button styles="hover:bg-green">Shop now</Button>
                     </Link>
                     <Link href="#features">
-                        <LearnBtn styles="xs:ml-16 ml-2">Learn More</LearnBtn>
+                        <LearnBtn styles="xs:ml-16 ml-2 bg-green">Learn More</LearnBtn>
                     </Link>
                 </div>
             </div>

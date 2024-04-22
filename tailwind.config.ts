@@ -18,7 +18,7 @@ const config: Config = {
         secondary: '#332e2f',
         dimWhite: '#efefef',
         dimAsh: '#595856',
-        green: '#5cdb95',
+        green: '#af69ef',
         white: "#fff",
 
         dark: '#0a0a0a',

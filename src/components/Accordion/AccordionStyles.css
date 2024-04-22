@@ -13,7 +13,7 @@
 }
 
 .item{
-    @apply  border-[3px] border-[#5dbb63] mb-[5px];
+    @apply  border-[3px] border-[#af69ef] mb-[5px];
 }
 
 .item:focus-visible{
@@ -21,7 +21,7 @@
 }
 
 .title{
-    @apply text-white flex justify-between items-center bg-[#5dbb63] px-[20px] py-[15px];
+    @apply text-white flex justify-between items-center bg-[#af69ef] px-[20px] py-[15px];
 }
 
 .title h2{

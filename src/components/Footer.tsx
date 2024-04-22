@@ -30,7 +30,7 @@ export default function Footer() {
 					<h1
 						className={`font-roboto font-bold xs:text-[50px] text-[36px] text-dimWhite leading-[56.4px] xs:leading-[44px] w-full  flex justify-start`}
 					>
-						Prime <span className="text-red-500">Max</span>
+						Prime <span className="text-[#77C589]">Max</span>
 					</h1>
 					<h3 className="font-roboto font-semibold xs:text-[18px] text-[16px] text-dimWhite leading-[18.4px] xs:leading-[16px] w-full  flex justify-start">
 						Pre Workout protein powder
@@ -54,7 +54,7 @@ export default function Footer() {
 										key={link.name}
 										className={` font-normal font-cabin text-[16px] leading-[22px] ${
 											index !== footerLink.links.length - 1 ? 'mb-2' : 'mb-0'
-										} hover:text-red-400`}
+										} hover:text-[#77C589]`}
 									>
 										{link.name}
 									</li>
@@ -106,7 +106,7 @@ export default function Footer() {
 				<p className=" font-mono text-[16px] sm:text-[16px] leading-[18px] sm:leading-[16px] text-dimWhite">
 					{' '}
 					Copyright &copy;2023 All Rights Reserved. Prime
-					<span className=" text-red-500">Max.</span>
+					<span className=" text-[#77C589]">Max.</span>
 				</p>
 			</div>
 		</section>

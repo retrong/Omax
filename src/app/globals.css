@@ -45,16 +45,16 @@ header{
     -webkit-animation: slide-right 0.5s ease-in;
     animation: slide-right 0.5s ease-in;
     -moz-animation: slide-right 0.5s ease-in;
-    background-color: #5cdb95;
+    background-color: #af69ef;
     width: 100svw !important;
-    height: 100svh;
+    height: 50svh;
     position: fixed;
 }
 
 @keyframes slide-right {
     0% {
-        -webkit-transform: translateX(50%);
-        transform: translateY(50%);
+        -webkit-transform: translateX(-100%);
+        transform: translateY(-100%);
     }
     100% {
         -webkit-transform: translateX(0);
@@ -64,8 +64,8 @@ header{
 
 @-webkit-keyframes slide-right{
     0% {
-        -webkit-transform: translateX(50%);
-        transform: translateX(50%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
     }
     100% {
         -webkit-transform: translateX(0);
